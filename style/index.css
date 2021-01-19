@@ -1,1 +1,284 @@
-/* Add CSS styling here */
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+/* border: 0;   */
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+*{
+    box-sizing:border-box; /*this rule says, if I give an element a width I want it to respect that width - if I add padding or a border, apply it within the width given not in addition to it*/
+    /* border:1px solid grey; */
+    max-width:100%; /*this says you can never be bigger than your parent*/
+}
+/*General Styles*/ 
+html{
+    font-size:62.5%;
+}
+
+body{
+    font-size:1.6rem;
+    line-height:1.5;
+    border:1px solid black;
+    font-family:'Texturina', serif;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+
+  
+  h1 {
+    display:flex;
+    justify-content:center;
+  }
+  
+  nav {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    text-align: center;
+    margin: 2% 0;
+  }
+  
+  .flexitem3 {
+    display:flex;
+    justify-content:center;
+  }
+  
+  .flexitem4 {
+    margin: 1% 10%;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration:none;
+    color:black;
+    padding: 0.5% 2%;
+    margin:0 0.08%;
+    border:1px solid black;
+    align-content: center;
+  }
+  
+  .image1{
+    display:flex;
+    background:url(https://picsum.photos/1980/350);
+    justify-content:center;
+    width:100%;
+    height:350px;
+    align-items:center;
+    margin:2% 0;
+  }
+  
+  .imagerow1{
+      display:flex;
+      flex-wrap: row;
+      flex-direction: row;
+      justify-content:space-evenly;
+      width:100vw;
+      height:30vh;
+      align-items: center;
+      margin:1% 0;
+      padding:2vh;
+      float: left;
+  }
+  
+  .image {
+    display:flex;
+    flex-wrap:row wrap;
+    width:18vw;
+    height:400px;
+    margin:2vw;
+    background:url(https://picsum.photos/200/400);
+  }
+
+  .container {
+    width: 1920px;
+    margin: 0 auto;
+  }
+
+  .contact {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+  }
+  .column1 {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-evenly;
+  }
+  .column2 {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-evenly;
+  }
+  .praph {
+    display: inline-block;
+    justify-items: end;
+  }
+
+  @media (max-width:800px){
+
+    nav {
+      display: flex;
+      flex-flow: column;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 1% 0;
+    }
+    nav a{
+      width: 30%;
+      margin: 0.09% 0;
+      padding: 1% 0;
+      font-size: 1.25em;
+    }
+    .flexitem4{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-content: center;
+      padding-block-end: 2%;
+    }
+    h1{
+      font-size: 3em;
+    }
+    .image1{
+      width:80%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin:0 10%;
+    }
+    .column1{
+        float: left;
+        justify-items: start;
+        width: 50%;
+        padding-left: 8vw;
+    }
+    .column2{
+      float: left;
+      justify-items: right;
+      width: 50%;
+      padding-right: 5vw;
+    }
+    .praph{
+      display: block;
+      text-align: center;
+      justify-content: space-between;
+      width: 100vw;
+      height: 5vh;
+    }
+    .contact{
+      display: flex;
+      justify-items:center;
+      width: 100vw;
+      height: 10vh;
+      padding: 10vh;
+      background: lightgray;
+    }
+    .image {
+      display:flex;
+      flex-wrap:nowrap;
+      width: 80%;
+      height:200px;
+    }
+      .mediaRow{
+        display: flex;
+        justify-self: center;
+        justify-items: center;
+        justify-content: center;
+      }
+  }
+
+  @media (max-width:500px){
+
+    nav {
+      display: flex;
+      flex-flow: column;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 1% 0;
+    }
+    nav a{
+      width: 30%;
+      margin: 0.09% 0;
+      padding: 1% 0;
+      font-size: 1.25em;
+    }
+    .flexitem4{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-content: center;
+      padding-block-end: 2%;
+    }
+    h1{
+      font-size: 2em;
+    }
+    .image1{
+      width:80%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin:0 10%;
+    }
+    .column1{
+        float: left;
+        justify-items: start;
+        width: 50%;
+        padding-left: 8vw;
+    }
+    .column2{
+      float: left;
+      justify-items: right;
+      width: 50%;
+      padding-right: 5vw;
+    }
+    .praph{
+      display: block;
+      text-align: center;
+      justify-content: space-between;
+      width: 100vw;
+      height: 5vh;
+    }
+    .contact{
+      display: flex;
+      justify-items:center;
+      width: 100vw;
+      height: 10vh;
+      padding: 10vh;
+      background: lightgray;
+    }
+    .image {
+      display:flex;
+      flex-wrap:nowrap;
+      width: 80%;
+      height:200px;
+    }
+      .mediaRow{
+        display: flex;
+        justify-self: center;
+        justify-items: center;
+        justify-content: center;
+      }
+  }
